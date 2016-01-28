@@ -28,7 +28,7 @@ class ViewController2: UIViewController {
     }
     
     @IBAction func pushButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("MagicMove2", sender: self)
+        self.performSegueWithIdentifier("MagicMove", sender: self)
     }
 
     /*

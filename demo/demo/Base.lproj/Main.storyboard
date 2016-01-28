@@ -170,7 +170,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="0RD-We-wsM" kind="custom" identifier="MagicMove2" customClass="UIStoryboardSegueMagicMove" customModule="demo" animates="NO" id="p4m-QD-41E"/>
+                        <segue destination="0RD-We-wsM" kind="custom" identifier="MagicMove" customClass="UIStoryboardSegueMagicMove" customModule="demo" animates="NO" id="p4m-QD-41E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuq-Vl-XhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
