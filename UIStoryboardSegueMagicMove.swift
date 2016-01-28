@@ -18,7 +18,7 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
         dstView.layoutIfNeeded()
         dstView.removeFromSuperview()
         
-        UIView.animateWithDuration(5.5,
+        UIView.animateWithDuration(0.5,
             delay: 0,
             options:UIViewAnimationOptions.CurveEaseInOut,
             animations: {

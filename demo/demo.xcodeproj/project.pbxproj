@@ -17,6 +17,7 @@
 		886BCF881C594ABC00C1B2BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886BCF871C594ABC00C1B2BD /* Images.xcassets */; };
 		886BCF8A1C594ED000C1B2BD /* UIStoryboardSegueMagicMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BCF891C594ED000C1B2BD /* UIStoryboardSegueMagicMove.swift */; };
 		886BCF8C1C5952F500C1B2BD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BCF8B1C5952F500C1B2BD /* ViewController2.swift */; };
+		88C7BC4C1C5ABA42008A9294 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C7BC4B1C5ABA42008A9294 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		886BCF871C594ABC00C1B2BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		886BCF891C594ED000C1B2BD /* UIStoryboardSegueMagicMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardSegueMagicMove.swift; path = ../../UIStoryboardSegueMagicMove.swift; sourceTree = "<group>"; };
 		886BCF8B1C5952F500C1B2BD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		88C7BC4B1C5ABA42008A9294 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				886BCF871C594ABC00C1B2BD /* Images.xcassets */,
 				886BCF651C594A0300C1B2BD /* Info.plist */,
 				886BCF8B1C5952F500C1B2BD /* ViewController2.swift */,
+				88C7BC4B1C5ABA42008A9294 /* ViewController3.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C7BC4C1C5ABA42008A9294 /* ViewController3.swift in Sources */,
 				886BCF8A1C594ED000C1B2BD /* UIStoryboardSegueMagicMove.swift in Sources */,
 				886BCF8C1C5952F500C1B2BD /* ViewController2.swift in Sources */,
 				886BCF5C1C594A0300C1B2BD /* ViewController.swift in Sources */,
@@ -496,6 +500,7 @@
 				886BCF801C594A0300C1B2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886BCF811C594A0300C1B2BD /* Build configuration list for PBXNativeTarget "demoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				886BCF831C594A0300C1B2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886BCF841C594A0300C1B2BD /* Build configuration list for PBXNativeTarget "demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				886BCF861C594A0300C1B2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

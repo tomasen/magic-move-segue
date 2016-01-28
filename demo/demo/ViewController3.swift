@@ -1,14 +1,14 @@
 //
-//  ViewController2.swift
+//  ViewController3.swift
 //  demo
 //
-//  Created by Tomasen on 1/28/16.
+//  Created by Tomasen on 1/29/16.
 //  Copyright © 2016 PINIDEA LLC. All rights reserved.
 //
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController3: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +21,6 @@ class ViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        for subview in view.subviews {
-            print(subview.tag, subview.frame, subview.bounds)
-        }
-    }
-    
-    @IBAction func pushButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("MagicMove2", sender: self)
-    }
 
     /*
     // MARK: - Navigation
