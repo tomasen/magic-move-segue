@@ -196,6 +196,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="PUSH"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="0RD-We-wsM" eventType="primaryActionTriggered" id="5QK-fE-5cd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Magic Move" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mt-Nm-bMY">
                                 <rect key="frame" x="335" y="396" width="131" height="21"/>
@@ -254,10 +257,67 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="swO-mz-VAE" kind="custom" identifier="Transite" customClass="UIStoryboardSegueMagicMove" customModule="demo" id="D6H-eJ-ZaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6j-g2-U1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1903" y="222"/>
+        </scene>
+        <!--MagicMove-->
+        <scene sceneID="0YT-pc-2Y7">
+            <objects>
+                <viewController id="FtY-Ht-3mA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRo-O9-Xnd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2y8-BC-601"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nh7-qp-mER">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-My-FBQ">
+                                <rect key="frame" x="183" y="145" width="76" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="aIj-NQ-ykf"/>
+                                    <constraint firstAttribute="height" constant="76" id="eDz-50-2Fp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2y8-BC-601" firstAttribute="top" secondItem="fFg-My-FBQ" secondAttribute="bottom" constant="379" id="KRK-Zx-5Jy"/>
+                            <constraint firstItem="fFg-My-FBQ" firstAttribute="top" secondItem="eRo-O9-Xnd" secondAttribute="bottom" constant="81" id="LFF-pN-85h"/>
+                            <constraint firstItem="fFg-My-FBQ" firstAttribute="leading" secondItem="nh7-qp-mER" secondAttribute="leading" constant="183" id="Q3L-TN-i7n"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KRK-Zx-5Jy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="MagicMove" id="lkU-YR-Fzl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwf-d4-hJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273" y="1282"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yJi-G0-Lpp">
+            <objects>
+                <navigationController id="swO-mz-VAE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O9P-iA-EQG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FtY-Ht-3mA" kind="relationship" relationship="rootViewController" id="xhl-hE-1gv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfc-qK-yyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="993"/>
         </scene>
     </scenes>
     <resources>
