@@ -21,6 +21,11 @@ class ViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        for subview in view.subviews {
+            print(subview.tag, subview.frame, subview.bounds)
+        }
+    }
 
     /*
     // MARK: - Navigation

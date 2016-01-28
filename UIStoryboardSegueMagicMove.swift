@@ -42,8 +42,18 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
             print("find: ", view.tag)
             if let target = findSubviewInViewByTag(dstView, tag: view.tag) {
                 // begin move animation
-                view.frame = target.frame
                 print("from:", view.frame, "to:", target.frame)
+                
+                if let label = view as? UILabel {
+                    if let labelTarget = target as? UILabel {
+                        let labelScale = labelTarget.font.pointSize / label.font.pointSize
+                        let xScale = view.transform.a * labelScale
+                        let yScale = view.transform.d * labelScale
+                        label.transform = CGAffineTransformScale(label.transform, xScale, yScale)
+                    }
+                }
+                
+                view.frame = target.frame
             }
         }
         if view.subviews.count > 0{
