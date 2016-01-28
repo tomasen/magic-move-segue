@@ -18,7 +18,7 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
         dstView.layoutIfNeeded()
         dstView.removeFromSuperview()
         
-        UIView.animateWithDuration(0.5,
+        UIView.animateWithDuration(5.5,
             delay: 0,
             options:UIViewAnimationOptions.CurveEaseInOut,
             animations: {
@@ -39,10 +39,11 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
             return
         }
         if view.tag != 0 {
+            print("find: ", view.tag)
             if let target = findSubviewInViewByTag(dstView, tag: view.tag) {
                 // begin move animation
                 view.frame = target.frame
-                
+                print("from:", view.frame, "to:", target.frame)
             }
         }
         if view.subviews.count > 0{
@@ -57,12 +58,15 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
         if view.hidden {
             return nil
         }
+        print("got:", view.tag)
         if view.tag == tag {
             return view
         }
         if view.subviews.count > 0{
             for subview in view.subviews {
-                return findSubviewInViewByTag(subview, tag: tag)
+                if let target = findSubviewInViewByTag(subview, tag: tag) {
+                    return target
+                }
             }
         }
         return nil
