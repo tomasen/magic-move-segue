@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="237" y="320"/>
         </scene>
-        <!--View Controller2-->
+        <!--View Controller-->
         <scene sceneID="W77-ip-umg">
             <objects>
-                <viewController id="mbL-qb-Rch" customClass="ViewController2" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mbL-qb-Rch" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kbX-Ec-ab5"/>
                         <viewControllerLayoutGuide type="bottom" id="yZ3-mQ-rPj"/>
@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="993" y="174"/>
         </scene>
-        <!--View Controller3-->
+        <!--View Controller-->
         <scene sceneID="GAt-3I-66q">
             <objects>
-                <viewController id="0RD-We-wsM" customClass="ViewController3" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0RD-We-wsM" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SjJ-bG-nXf"/>
                         <viewControllerLayoutGuide type="bottom" id="G5q-eu-ZZb"/>
@@ -258,17 +258,17 @@
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="swO-mz-VAE" kind="custom" identifier="Transite" customClass="UIStoryboardSegueMagicMove" customModule="demo" id="D6H-eJ-ZaZ"/>
+                        <segue destination="swO-mz-VAE" kind="custom" identifier="MagicMove" customClass="UIStoryboardSegueMagicMove" customModule="demo" id="D6H-eJ-ZaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6j-g2-U1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1903" y="222"/>
         </scene>
-        <!--MagicMove-->
+        <!--First VC-->
         <scene sceneID="0YT-pc-2Y7">
             <objects>
-                <viewController id="FtY-Ht-3mA" sceneMemberID="viewController">
+                <viewController id="FtY-Ht-3mA" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eRo-O9-Xnd"/>
                         <viewControllerLayoutGuide type="bottom" id="2y8-BC-601"/>
@@ -297,11 +297,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="MagicMove" id="lkU-YR-Fzl"/>
+                    <navigationItem key="navigationItem" title="First VC" id="lkU-YR-Fzl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwf-d4-hJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="1282"/>
+            <point key="canvasLocation" x="2229" y="1042"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yJi-G0-Lpp">
