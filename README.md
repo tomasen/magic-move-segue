@@ -18,3 +18,7 @@ in storyboard editor:
 
 * support navigation controller correctly
 * support unwind correctly
+
+### Thanks
+
+[BCMagicTransition](https://github.com/boycechang/BCMagicTransition)
