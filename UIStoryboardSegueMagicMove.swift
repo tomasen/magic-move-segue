@@ -8,12 +8,18 @@
 
 import UIKit
 
-class UIStoryboardSegueMagicMove: UIStoryboardSegue {
+class UIStoryboardSegueMagicMove: UIStoryboardSegue, UIViewControllerTransitioningDelegate {
     override func perform() {
+
+        // TODO: 
+        // implement UIViewControllerTransitioningDelegate
+        // self.sourceViewController.transitioningDelegate = self
+
         let srcView = self.sourceViewController.view
         let dstView = self.destinationViewController.view
         
-        UIApplication.sharedApplication().keyWindow?.insertSubview(dstView, atIndex: 0)
+        // UIApplication.sharedApplication().keyWindow?.insertSubview(dstView, atIndex: 0)
+        srcView.superview?.addSubview(dstView)
         dstView.setNeedsLayout()
         dstView.layoutIfNeeded()
         dstView.removeFromSuperview()
@@ -26,11 +32,15 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
             }, completion: {
                 (value: Bool) in
                 
-                self.sourceViewController
-                    .presentViewController(
-                        self.destinationViewController,
-                        animated:false,
-                        completion:nil)
+                if let nav = self.sourceViewController.navigationController {
+                    nav.pushViewController(self.destinationViewController, animated: false)
+                } else {
+                    self.sourceViewController
+                        .presentViewController(
+                            self.destinationViewController,
+                            animated:false,
+                            completion:nil)
+                }
         })
     }
     

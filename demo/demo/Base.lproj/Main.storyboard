@@ -284,12 +284,26 @@
                                     <constraint firstAttribute="height" constant="76" id="eDz-50-2Fp"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQu-8Y-zTj">
+                                <rect key="frame" x="237" y="479" width="126" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="7bD-WB-Nso"/>
+                                    <constraint firstAttribute="height" constant="39" id="V91-jW-ltY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="PUSH"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="FtY-Ht-3mA" eventType="primaryActionTriggered" id="mHb-6E-Ebh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2y8-BC-601" firstAttribute="top" secondItem="fFg-My-FBQ" secondAttribute="bottom" constant="379" id="KRK-Zx-5Jy"/>
                             <constraint firstItem="fFg-My-FBQ" firstAttribute="top" secondItem="eRo-O9-Xnd" secondAttribute="bottom" constant="81" id="LFF-pN-85h"/>
                             <constraint firstItem="fFg-My-FBQ" firstAttribute="leading" secondItem="nh7-qp-mER" secondAttribute="leading" constant="183" id="Q3L-TN-i7n"/>
+                            <constraint firstItem="ZQu-8Y-zTj" firstAttribute="centerX" secondItem="nh7-qp-mER" secondAttribute="centerX" id="QeY-TK-Lz1"/>
+                            <constraint firstItem="2y8-BC-601" firstAttribute="top" secondItem="ZQu-8Y-zTj" secondAttribute="bottom" constant="82" id="g9X-NJ-LZE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -297,7 +311,12 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="First VC" id="lkU-YR-Fzl"/>
+                    <navigationItem key="navigationItem" title="First VC" id="lkU-YR-Fzl">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="chT-Gf-nvz"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="eJS-Gi-ZQh" kind="custom" identifier="MagicMove" customClass="UIStoryboardSegueMagicMove" customModule="demo" id="6uL-FH-oJf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwf-d4-hJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,6 +337,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfc-qK-yyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1392" y="993"/>
+        </scene>
+        <!--Second VC-->
+        <scene sceneID="OgL-bT-cHZ">
+            <objects>
+                <viewController id="eJS-Gi-ZQh" customClass="ViewController2" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F75-gJ-0Wh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pZG-Pz-I6e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d33-E4-dnc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-t8-ccD">
+                                <rect key="frame" x="251" y="239" width="76" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="XeI-Pq-uot"/>
+                                    <constraint firstAttribute="width" constant="76" id="bvW-iQ-nFz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Gh-t8-ccD" firstAttribute="leading" secondItem="d33-E4-dnc" secondAttribute="leading" constant="251" id="Ehi-Ev-Bew"/>
+                            <constraint firstItem="pZG-Pz-I6e" firstAttribute="top" secondItem="1Gh-t8-ccD" secondAttribute="bottom" constant="379" id="XuD-6z-GbY"/>
+                            <constraint firstItem="1Gh-t8-ccD" firstAttribute="top" secondItem="F75-gJ-0Wh" secondAttribute="bottom" constant="175" id="jhL-mD-ssT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XuD-6z-GbY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second VC" id="Jlz-Ck-Bw6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sQ-Qh-WkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="1042"/>
         </scene>
     </scenes>
     <resources>
