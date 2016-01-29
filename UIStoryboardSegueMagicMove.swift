@@ -42,15 +42,11 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
             if let target = findSubviewInViewByTag(dstView, tag: view.tag) {
                 // magic move animation
                 
-                if let label = view as? UILabel {
-                    if let labelTarget = target as? UILabel {
-                        let xScale = labelTarget.intrinsicContentSize().width / label.intrinsicContentSize().width
-                        let yScale = labelTarget.intrinsicContentSize().height / label.intrinsicContentSize().height
-                        
-                        label.transform = CGAffineTransformScale(label.transform, xScale, yScale)
-                    }
-                }
+                let xScale = target.intrinsicContentSize().width / view.intrinsicContentSize().width
+                let yScale = target.intrinsicContentSize().height / view.intrinsicContentSize().height
                 
+                view.transform = CGAffineTransformScale(view.transform, xScale, yScale)
+
                 view.frame = target.frame
             }
         }
