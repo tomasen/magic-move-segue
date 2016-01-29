@@ -48,6 +48,8 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue {
                 view.transform = CGAffineTransformScale(view.transform, xScale, yScale)
 
                 view.frame = target.frame
+            } else {
+                view.alpha = 0.0
             }
         }
         if view.subviews.count > 0{
