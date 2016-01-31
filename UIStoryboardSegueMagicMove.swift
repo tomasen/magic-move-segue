@@ -1,6 +1,5 @@
 //
 //  UIStoryboardSegueMagicMove.swift
-//  MuLan
 //
 //  Created by Tomasen on 1/10/16.
 //  Copyright © 2016 PINIDEA LLC. All rights reserved.
