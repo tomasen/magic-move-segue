@@ -18,7 +18,7 @@ class UIStoryboardSegueMagicMove: UIStoryboardSegue, UIViewControllerTransitioni
         let dstView = self.destinationViewController.view
         
         // UIApplication.sharedApplication().keyWindow?.insertSubview(dstView, atIndex: 0)
-        srcView.superview?.addSubview(dstView)
+        srcView.superview?.insertSubview(dstView, atIndex: 0)
         dstView.setNeedsLayout()
         dstView.layoutIfNeeded()
         dstView.removeFromSuperview()
